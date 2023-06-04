@@ -2,7 +2,6 @@ import Container from "@/components/container";
 import ThemeSwitch from "@/components/themeSwitch";
 import Image from "next/image";
 import { myLoader } from "@/utils/all";
-import VercelLogo from "../public/img/vercel.svg";
 
 export default function Footer(props) {
   return (
@@ -38,21 +37,6 @@ export default function Footer(props) {
         </span>
       </div>
       <div className="mt-2 flex items-center justify-between">
-        <div className="mt-5">
-          <a
-            href="https://vercel.com/?utm_source=web3templates&utm_campaign=oss"
-            target="_blank"
-            rel="noopener"
-            className="relative block w-44">
-            <Image
-              src={VercelLogo}
-              alt="Powered by Vercel"
-              unoptimized={true}
-              width="150"
-              height="25"
-            />
-          </a>
-        </div>
         <ThemeSwitch />
       </div>
       <Backlink />
